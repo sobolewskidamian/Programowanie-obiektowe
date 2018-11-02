@@ -120,7 +120,7 @@
     <session id="1313795192">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="2" />
@@ -341,7 +341,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541199536762" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541199547293" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -629,14 +629,11 @@
       <workItem from="1540978534963" duration="4945000" />
       <workItem from="1541008131116" duration="267000" />
       <workItem from="1541021677425" duration="2408000" />
-      <workItem from="1541199308887" duration="226000" />
+      <workItem from="1541199308887" duration="589000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testUnboundedMap - 2018.10.31 at 23h 04m 29s.xml">
-      <configuration name="testUnboundedMap" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testRectangularMap - 2018.10.31 at 23h 05m 38s.xml">
       <configuration name="testRectangularMap" configurationId="JUnit" />
     </history-entry>
@@ -664,9 +661,12 @@
     <history-entry file="testUnboundedMap - 2018.11.02 at 23h 58m 20s.xml">
       <configuration name="testUnboundedMap" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testUnboundedMap - 2018.11.02 at 23h 59m 06s.xml">
+      <configuration name="testUnboundedMap" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58761000" />
+    <option name="totallyTimeSpent" value="59124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -681,7 +681,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45409837" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45409837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
