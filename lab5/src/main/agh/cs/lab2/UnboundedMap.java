@@ -27,7 +27,7 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
         this.lewyDolny=position.lowerLef(this.lewyDolny);
     }
 
-    public String toString(IWorldMap map) throws InterruptedException, IOException {
+    public String toString(IWorldMap map) throws InterruptedException {
         return new MapVisualizer(map).draw(this.lewyDolny, this.prawyGorny);
     }
 

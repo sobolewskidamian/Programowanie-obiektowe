@@ -1,8 +1,5 @@
 package agh.cs.lab2;
-import java.io.IOException;
 import java.lang.*;
-import java.nio.channels.Channel;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -34,7 +31,7 @@ public class MapVisualizer {
      * @param upperRight The upper right corner of the region that is drawn.
      * @return String representation of the selected region of the map.
      */
-    public String draw(Position lowerLeft, Position upperRight) throws InterruptedException, IOException {
+    public String draw(Position lowerLeft, Position upperRight) throws InterruptedException {
         StringBuilder builder = new StringBuilder();
         for (int i = upperRight.y + 1; i >= lowerLeft.y - 1; i--) {
             if (i == upperRight.y + 1) {
@@ -52,9 +49,8 @@ public class MapVisualizer {
                 }
             }
             builder.append(System.lineSeparator());
+            Thread.sleep(80);
         }
-        //Runtime.getRuntime().exec("cls");
-        TimeUnit.MILLISECONDS.sleep(800);
         return builder.toString();
     }
 
