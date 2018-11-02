@@ -27,5 +27,4 @@ public class CarSystem {
 
         map.run(directions);
     }
-
 }
