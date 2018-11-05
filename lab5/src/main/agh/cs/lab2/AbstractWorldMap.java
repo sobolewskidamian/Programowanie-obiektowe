@@ -16,10 +16,7 @@ abstract class AbstractWorldMap {
     }
 
     protected boolean isOccupied(Position position) {
-        for (Car actualCar : cars)
-            if (position.equals(actualCar.getPosition()))
-                return true;
-        return false;
+        return objectAt(position)!=null;
     }
 
     protected Object objectAt(Position position) {
@@ -44,7 +41,7 @@ abstract class AbstractWorldMap {
         }
     }
 
-    protected abstract void setCorners(Position afterMove);
+    void setCorners(Position afterMove) {}
 
     protected abstract boolean canMoveTo(Position afterMove);
 

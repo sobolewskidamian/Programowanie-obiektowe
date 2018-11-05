@@ -52,11 +52,7 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
 
     @Override
     public boolean isOccupied(Position position) {
-        for (HayStack actualHay : hays) {
-            if(position.equals(actualHay.getPosition()))
-                return true;
-        }
-        return super.isOccupied(position);
+        return objectAt(position)!=null;
     }
 
     @Override

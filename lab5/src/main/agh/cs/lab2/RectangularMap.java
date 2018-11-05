@@ -12,7 +12,7 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
         this.prawyGorny = new Position(width-1, height-1);
     }
 
-    public String toString(IWorldMap map) throws InterruptedException, IOException {
+    public String toString(IWorldMap map) throws InterruptedException {
         return new MapVisualizer(map).draw(lewyDolny, prawyGorny);
     }
 
@@ -30,7 +30,7 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     public boolean isOccupied(Position position) {
-        return super.isOccupied(position);
+        return objectAt(position)!=null;
     }
 
     public Object objectAt(Position position) {
@@ -40,6 +40,4 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     public List<Car> getCars(){
         return cars;
     }
-
-    public void setCorners(Position afterMove){}
 }
