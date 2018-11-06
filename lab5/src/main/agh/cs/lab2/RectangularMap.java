@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.List;
 
 public class RectangularMap extends AbstractWorldMap implements IWorldMap {
-    public Position lewyDolny;
-    public Position prawyGorny;
+    private Position lewyDolny;
+    private Position prawyGorny;
 
     public RectangularMap(int width, int height) {
         this.lewyDolny = new Position(0,0);
@@ -22,7 +22,7 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     public boolean canMoveTo(Position position) {
-        return (position.larger(lewyDolny) && position.smaller(prawyGorny) && !isOccupied(position));
+        return (position.larger(lewyDolny) && position.smaller(prawyGorny) && super.canMoveTo(position));
     }
 
     public void run(MoveDirection[] directions) throws InterruptedException, IOException {

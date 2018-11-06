@@ -6,8 +6,8 @@ import java.util.List;
 public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
     private List<HayStack> hays;
 
-    public Position lewyDolny;
-    public Position prawyGorny;
+    private Position lewyDolny;
+    private Position prawyGorny;
 
     public UnboundedMap(List<HayStack> hays){
         this.hays=hays;
@@ -33,7 +33,7 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
 
     @Override
     public boolean canMoveTo(Position position) {
-        return !isOccupied(position);
+        return super.canMoveTo(position);
     }
 
     @Override

@@ -41,9 +41,11 @@ abstract class AbstractWorldMap {
         }
     }
 
-    void setCorners(Position afterMove) {}
+    protected boolean canMoveTo(Position afterMove){
+        return !isOccupied(afterMove);
+    }
 
-    protected abstract boolean canMoveTo(Position afterMove);
+    void setCorners(Position afterMove) {}
 
     protected abstract String toString(IWorldMap map) throws InterruptedException, IOException;
 }

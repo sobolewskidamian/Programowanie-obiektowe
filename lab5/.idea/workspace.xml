@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a193e89-d913-4f8e-80fc-7cea4825c95d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/agh/cs/lab2/AbstractWorldMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/agh/cs/lab2/AbstractWorldMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/agh/cs/lab2/RectangularMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/agh/cs/lab2/RectangularMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/agh/cs/lab2/UnboundedMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/agh/cs/lab2/UnboundedMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java" afterDir="false" />
@@ -123,39 +124,39 @@
     <session id="1313795192">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="3" />
-          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="59" />
+          <entry key="java" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3629" />
+          <entry key="java" value="3703" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3629" />
+          <entry key="JAVA" value="3703" />
         </counts>
       </usages-collector>
     </session>
@@ -165,15 +166,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#canMoveTo#0;class#RectangularMap#0" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
                 <element signature="method#run#0;class#RectangularMap#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1448#1449#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/IWorldMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/UnboundedMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,9 +263,9 @@
         <option value="$PROJECT_DIR$/src/test/agh/cs/lab2/testUnboundedMap.java" />
         <option value="$PROJECT_DIR$/src/main/agh/cs/lab2/Car.java" />
         <option value="$PROJECT_DIR$/src/main/agh/cs/lab2/MapVisualizer.java" />
+        <option value="$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java" />
         <option value="$PROJECT_DIR$/src/main/agh/cs/lab2/UnboundedMap.java" />
         <option value="$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java" />
-        <option value="$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java" />
       </list>
     </option>
   </component>
@@ -251,7 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,7 +333,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,7 +349,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541453049977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541501421575" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -336,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testUnboundedMap">
+  <component name="RunManager" selected="JUnit.testRectangularMap">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -550,8 +589,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testUnboundedMap" />
         <item itemvalue="JUnit.testRectangularMap" />
+        <item itemvalue="JUnit.testUnboundedMap" />
         <item itemvalue="Application.CarSystem" />
         <item itemvalue="JUnit.MapDirectionTest" />
         <item itemvalue="JUnit.CarTest" />
@@ -602,16 +641,12 @@
       <workItem from="1541447595985" duration="693000" />
       <workItem from="1541451940017" duration="201000" />
       <workItem from="1541452251341" duration="801000" />
+      <workItem from="1541454368643" duration="954000" />
+      <workItem from="1541501008685" duration="409000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testUnboundedMap - 2018.11.02 at 23h 57m 59s.xml">
-      <configuration name="testUnboundedMap" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testUnboundedMap - 2018.11.02 at 23h 58m 20s.xml">
-      <configuration name="testUnboundedMap" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testUnboundedMap - 2018.11.02 at 23h 59m 06s.xml">
       <configuration name="testUnboundedMap" configurationId="JUnit" />
     </history-entry>
@@ -636,15 +671,21 @@
     <history-entry file="testUnboundedMap - 2018.11.05 at 22h 23m 24s.xml">
       <configuration name="testUnboundedMap" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testUnboundedMap - 2018.11.06 at 11h 48m 44s.xml">
+      <configuration name="testUnboundedMap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testRectangularMap - 2018.11.06 at 11h 49m 05s.xml">
+      <configuration name="testRectangularMap" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60819000" />
+    <option name="totallyTimeSpent" value="62182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19894099" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" weight="0.24962178" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -742,20 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/IWorldMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/agh/cs/lab2/testRectangularMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -800,42 +827,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/UnboundedMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/IWorldMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#canMoveTo#0;class#RectangularMap#0" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
             <element signature="method#run#0;class#RectangularMap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
           </folding>
         </state>
       </provider>
