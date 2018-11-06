@@ -21,6 +21,7 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
         return super.place(car);
     }
 
+    @Override
     public boolean canMoveTo(Position position) {
         return (position.larger(lewyDolny) && position.smaller(prawyGorny) && super.canMoveTo(position));
     }
