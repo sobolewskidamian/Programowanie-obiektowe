@@ -40,5 +40,4 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     public List<Car> getCars(){
         return cars;
     }
-
 }
