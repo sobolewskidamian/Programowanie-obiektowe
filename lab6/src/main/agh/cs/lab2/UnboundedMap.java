@@ -18,8 +18,9 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
             this.lewyDolny = new Position(0,0);
         this.prawyGorny = lewyDolny;
 
-        for(HayStack hay: this.hays)
+        for(HayStack hay: this.hays) {
             setCorners(hay.getPosition());
+        }
     }
 
     public void setCorners(Position position){

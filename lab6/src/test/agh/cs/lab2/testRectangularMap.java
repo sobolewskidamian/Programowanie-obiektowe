@@ -20,7 +20,6 @@ public class testRectangularMap {
         MoveDirection[] directions = new OptionsParser().parse(tab);
         IWorldMap map = new RectangularMap(5,5);
         map.place(new Car(map));
-        map.place(new Car(map));
         map.place(new Car(map, new Position(3,4)));
         map.run(directions);
         List<Car> cars = ((RectangularMap) map).getCars();

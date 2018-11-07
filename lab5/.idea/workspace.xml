@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a193e89-d913-4f8e-80fc-7cea4825c95d" name="Default" comment="Programowanie obiektowe">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/out/production/lab2/agh/cs/lab2/AbstractWorldMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/out/production/lab2/agh/cs/lab2/AbstractWorldMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/out/production/lab2/agh/cs/lab2/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/out/production/lab2/agh/cs/lab2/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/out/production/lab2/agh/cs/lab2/UnboundedMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/out/production/lab2/agh/cs/lab2/UnboundedMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/out/test/lab2/agh/cs/lab2/testRectangularMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/out/test/lab2/agh/cs/lab2/testRectangularMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/agh/cs/lab2/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/main/agh/cs/lab2/AbstractWorldMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/main/agh/cs/lab2/UnboundedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/main/agh/cs/lab2/UnboundedMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6/src/test/agh/cs/lab2/testRectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/src/test/agh/cs/lab2/testRectangularMap.java" afterDir="false" />
     </list>
     <ignored path="lab2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,7 +125,7 @@
     <session id="1313795192">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="3" />
@@ -612,7 +618,7 @@
       <workItem from="1541452251341" duration="801000" />
       <workItem from="1541454368643" duration="954000" />
       <workItem from="1541501008685" duration="763000" />
-      <workItem from="1541505923474" duration="1134000" />
+      <workItem from="1541505923474" duration="1369000" />
     </task>
     <task id="LOCAL-00001" summary="Programowanie obiektowe">
       <created>1541501627868</created>
@@ -657,7 +663,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63670000" />
+    <option name="totallyTimeSpent" value="63905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

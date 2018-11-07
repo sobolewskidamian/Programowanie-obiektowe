@@ -7,7 +7,7 @@ import java.util.List;
 
 abstract class AbstractWorldMap {
     protected List<Car> cars = new LinkedList<>();
-    protected HashMap<Position,Car> cars = new HashMap<>();
+    protected HashMap<Position,Object> carsHash = new HashMap<>();
 
 
     protected boolean place(Car car) {
