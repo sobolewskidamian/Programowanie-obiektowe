@@ -19,8 +19,8 @@ public class testRectangularMap {
         String tab[] = {"f", "b", "r", "l", "f", "f", "r", "r", "f", "f", "f", "f", "f", "f", "f", "f",};
         MoveDirection[] directions = new OptionsParser().parse(tab);
         IWorldMap map = new RectangularMap(5,5);
-        map.place(new Car(map));
-        map.place(new Car(map, new Position(3,4)));
+        map.placeCar(new Car(map));
+        map.placeCar(new Car(map, new Position(3,4)));
         map.run(directions);
         List<Car> cars = ((RectangularMap) map).getCars();
         Car car0 = cars.get(0);

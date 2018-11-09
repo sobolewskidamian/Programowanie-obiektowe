@@ -17,8 +17,8 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean place(Car car) {
-        return super.place(car);
+    public boolean placeCar(Car car) {
+        return super.placeCar(car);
     }
 
     @Override
@@ -39,6 +39,6 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     public List<Car> getCars(){
-        return cars;
+        return super.getCars();
     }
 }

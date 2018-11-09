@@ -1,9 +1,5 @@
 package agh.cs.lab2;
 
-/**
- * Created by Student39 on 2018-10-09.
- */
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,17 +13,16 @@ public class testUnboundedMap {
 
     @Test
     public void testCars() throws InterruptedException, IOException {
-        List<HayStack> hays = new ArrayList<>();
-        hays.add(new HayStack(new Position(-4,-1)));
-        hays.add(new HayStack(new Position(2,3)));
-        hays.add(new HayStack(new Position(4,6)));
-        hays.add(new HayStack(new Position(1,0)));
         String tab[] = {"f", "b", "r", "l", "f", "f", "r", "r", "f", "f", "f", "f", "f", "f", "f", "f",};
         MoveDirection[] directions = new OptionsParser().parse(tab);
-        IWorldMap map = new UnboundedMap(hays);
-        map.place(new Car(map, new Position(2,0)));
-        map.place(new Car(map));
-        map.place(new Car(map, new Position(3,3)));
+        IWorldMap map = new UnboundedMap();
+        ((UnboundedMap) map).placeHayStack(new HayStack(new Position(-4,-1)));
+        ((UnboundedMap) map).placeHayStack(new HayStack(new Position(2,3)));
+        ((UnboundedMap) map).placeHayStack(new HayStack(new Position(4,6)));
+        ((UnboundedMap) map).placeHayStack(new HayStack(new Position(1,0)));
+        map.placeCar(new Car(map, new Position(2,0)));
+        map.placeCar(new Car(map));
+        map.placeCar(new Car(map, new Position(3,3)));
         map.run(directions);
         List<Car> cars = ((UnboundedMap) map).getCars();
         Car car0 = cars.get(0);
