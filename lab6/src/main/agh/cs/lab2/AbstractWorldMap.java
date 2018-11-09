@@ -31,11 +31,7 @@ abstract class AbstractWorldMap {
     }
 
     protected Object objectAt(Position position) {
-        for (Position actual : this.objects.keySet()) {
-            if (actual.equals(position))
-                return objects.get(actual);
-        }
-        return null;
+        return objects.get(position);
     }
 
     public void run(MoveDirection[] directions) throws InterruptedException, IOException {
@@ -50,7 +46,6 @@ abstract class AbstractWorldMap {
                 actualCar.move(directions[i]);
                 objects.remove(actualPosition);
                 objects.put(afterMove,actualCar);
-                System.out.println(afterMove.toString());
                 setCorners(afterMove);
             }
             System.out.println(toString(actualCar.getMap()));
