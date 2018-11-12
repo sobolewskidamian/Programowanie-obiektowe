@@ -27,18 +27,9 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean placeCar(Car car) {
-        if(super.placeCar(car)) {
+    public boolean placeObject(IObject car) {
+        if(super.placeObject(car)) {
             setCorners(car.getPosition());
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public boolean placeHayStack(HayStack hay) {
-        if(super.placeHayStack(hay)) {
-            setCorners(hay.getPosition());
             return true;
         }
         return false;

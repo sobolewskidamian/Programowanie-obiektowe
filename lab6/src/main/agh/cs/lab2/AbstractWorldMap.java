@@ -9,21 +9,14 @@ abstract class AbstractWorldMap {
     protected HashMap<Position,Object> objects = new HashMap<>();
     protected List<Car> cars = new LinkedList<>();
 
-    protected boolean placeCar(Car car) {
-        if (!isOccupied(car.getPosition())) {
-            this.objects.put(car.getPosition(),car);
-            this.cars.add(car);
+    protected boolean placeObject(IObject obj) {
+        if (!isOccupied(obj.getPosition())) {
+            this.objects.put(obj.getPosition(),obj);
+            if(obj instanceof Car)
+                this.cars.add((Car) obj);
             return true;
         }
-        throw new IllegalArgumentException(car.getPosition() + " jest już zajmowane");
-    }
-
-    protected boolean placeHayStack(HayStack hay) {
-        if (!isOccupied(hay.getPosition())) {
-            this.objects.put(hay.getPosition(),hay);
-            return true;
-        }
-        throw new IllegalArgumentException(hay.getPosition() + " jest już zajmowane");
+        throw new IllegalArgumentException(obj.getPosition() + " jest już zajmowane");
     }
 
     protected boolean isOccupied(Position position) {
@@ -58,15 +51,6 @@ abstract class AbstractWorldMap {
 
     protected List<Car> getCars(){
         return this.cars;
-    }
-
-    protected List<HayStack> getHayStacks(){
-        List<HayStack> hay = new LinkedList<>();
-        for(Object actual : this.objects.values()) {
-            if (actual instanceof HayStack)
-                hay.add((HayStack) actual);
-        }
-        return hay;
     }
 
     void setCorners(Position afterMove) {}

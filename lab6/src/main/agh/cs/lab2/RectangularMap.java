@@ -17,8 +17,8 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean placeCar(Car car) {
-        return super.placeCar(car);
+    public boolean placeObject(IObject car) {
+        return super.placeObject(car);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package agh.cs.lab2;
 
-public class HayStack {
+public class HayStack implements IObject{
     private Position position;
 
     public HayStack(Position position){

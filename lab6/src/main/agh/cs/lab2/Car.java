@@ -1,6 +1,6 @@
 package agh.cs.lab2;
 
-public class Car{
+public class Car implements IObject{
     private MapDirection orientacja;
     private Position pozycja;
     private IWorldMap map;
