@@ -25,8 +25,12 @@ public class testUnboundedMap {
         map.placeObject(new Car(map));
         map.placeObject(new Car(map, new Position(3,3)));
 
-        map.run(directions);
         List<Car> cars = ((UnboundedMap) map).getCars();
+        IPositionChangeObserver observer=(UnboundedMap) map;
+        for(Car actual: cars)
+            actual.addObserver(observer);
+
+        map.run(directions);
         IObject car0 = cars.get(0);
         IObject car1 = cars.get(1);
         IObject car2 = cars.get(2);
@@ -34,7 +38,4 @@ public class testUnboundedMap {
         Assert.assertEquals(car1.getPosition(), new Position(4,2));
         Assert.assertEquals(car2.getPosition(), new Position(7,3));
     }
-
-
-
 }

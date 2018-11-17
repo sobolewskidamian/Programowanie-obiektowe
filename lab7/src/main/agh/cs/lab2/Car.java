@@ -7,7 +7,7 @@ public class Car implements IObject{
     private MapDirection orientacja;
     private Position pozycja;
     private IWorldMap map;
-    private List<Observer> observers;
+    private List<IPositionChangeObserver> observers;
 
     public Car(IWorldMap map, Position initialPosition) {
         this.pozycja = initialPosition;
@@ -55,11 +55,12 @@ public class Car implements IObject{
             this.orientacja = this.orientacja.next();
         else if (direction.equals(MoveDirection.LEFT))
             this.orientacja = this.orientacja.previous();
-        /*else {
+        else {
             Position vect = getVector(direction);
             Position newP = this.pozycja.add(vect);
-            this.pozycja=newP;
-        }*/
+            positionChanged(this.pozycja, newP);
+            this.pozycja = newP;
+        }
     }
 
     public Position getPosition(){
@@ -67,23 +68,24 @@ public class Car implements IObject{
     }
 
     @Override
-    public void setPosition(Position position) {
-        this.pozycja=position;
+    public void setPosition(Position nowa) {
+        this.pozycja=nowa;
     }
 
     public IWorldMap getMap(){
         return this.map;
     }
 
-    public void addObserver(Observer observer){
+    public void addObserver(IPositionChangeObserver observer){
         this.observers.add(observer);
     }
 
-    public void removeObserver(Observer observer){
+    public void removeObserver(IPositionChangeObserver observer){
         this.observers.remove(observer);
     }
 
-    public List<Observer> getObservers(){
-        return this.observers;
+    public void positionChanged(Position oldPosition,Position newPosition) {
+        for(IPositionChangeObserver actual: this.observers)
+            actual.positionChanged(oldPosition,newPosition);
     }
 }

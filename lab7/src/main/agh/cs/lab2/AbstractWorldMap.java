@@ -36,9 +36,7 @@ abstract class AbstractWorldMap implements IPositionChangeObserver{
             Position vector = actualCar.getVector(directions[i]);
             Position afterMove = actualPosition.add(vector);
             if(canMoveTo(afterMove) || actualCar.getPosition().equals(afterMove)) {
-                positionChanged(actualPosition, afterMove);
                 actualCar.move(directions[i]);
-
                 setCorners(afterMove);
             }
             System.out.println(toString(actualCar.getMap()));
@@ -52,20 +50,11 @@ abstract class AbstractWorldMap implements IPositionChangeObserver{
     public void positionChanged(Position oldPosition, Position newPosition) {
         if(!oldPosition.equals(newPosition)){
             Car obj = (Car) objects.get(oldPosition);
+            obj.setPosition(newPosition);
             objects.remove(oldPosition);
             objects.put(newPosition,obj);
-            obj.setPosition(newPosition);
-
-            List<Observer> list = obj.getObservers();
-            System.out.println(list.size()+"");
-            for(int i=0;i<list.size();i++){
-                System.out.println(list.get(i).getIndex()+": Samochod zmienil pozycje z "+oldPosition+" na "+newPosition);
-            }
         }
     }
-
-
-
 
     protected List<Car> getCars(){
         return this.cars;
