@@ -3,7 +3,7 @@ package agh.cs.lab2;
 import java.io.IOException;
 import java.util.List;
 
-public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
+public class UnboundedMap extends AbstractWorldMap {
     private Position lewyDolny;
     private Position prawyGorny;
 
@@ -22,35 +22,11 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean canMoveTo(Position position) {
-        return super.canMoveTo(position);
-    }
-
-    @Override
     public boolean placeObject(IObject car) {
         if(super.placeObject(car)) {
             setCorners(car.getPosition());
             return true;
         }
         return false;
-    }
-
-    @Override
-    public void run(MoveDirection[] directions) throws InterruptedException, IOException {
-        super.run(directions);
-    }
-
-    @Override
-    public boolean isOccupied(Position position) {
-        return super.isOccupied(position);
-    }
-
-    @Override
-    public Object objectAt(Position position) {
-        return super.objectAt(position);
-    }
-
-    public List<Car> getCars(){
-        return super.getCars();
     }
 }

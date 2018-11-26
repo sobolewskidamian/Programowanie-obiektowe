@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-abstract class AbstractWorldMap {
-    protected HashMap<Position,Object> objects = new HashMap<>();
+abstract class AbstractWorldMap implements IWorldMap {
+    protected HashMap<Position,IObject> objects = new HashMap<>();
     protected List<Car> cars = new LinkedList<>();
 
-    protected boolean placeObject(IObject obj) {
+    public boolean placeObject(IObject obj) {
         if (!isOccupied(obj.getPosition())) {
             this.objects.put(obj.getPosition(),obj);
             if(obj instanceof Car)
@@ -19,11 +19,11 @@ abstract class AbstractWorldMap {
         throw new IllegalArgumentException(obj.getPosition() + " jest już zajmowane");
     }
 
-    protected boolean isOccupied(Position position) {
+    public boolean isOccupied(Position position) {
         return objectAt(position)!=null;
     }
 
-    protected Object objectAt(Position position) {
+    public Object objectAt(Position position) {
         return objects.get(position);
     }
 
@@ -45,7 +45,7 @@ abstract class AbstractWorldMap {
         }
     }
 
-    protected boolean canMoveTo(Position afterMove){
+    public boolean canMoveTo(Position afterMove){
         return !isOccupied(afterMove);
     }
 

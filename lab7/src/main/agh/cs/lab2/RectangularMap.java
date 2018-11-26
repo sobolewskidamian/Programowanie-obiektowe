@@ -1,9 +1,6 @@
 package agh.cs.lab2;
 
-import java.io.IOException;
-import java.util.List;
-
-public class RectangularMap extends AbstractWorldMap implements IWorldMap {
+public class RectangularMap extends AbstractWorldMap  {
     private Position lewyDolny;
     private Position prawyGorny;
 
@@ -17,33 +14,7 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean placeObject(IObject car) {
-        return super.placeObject(car);
-    }
-
-    @Override
     public boolean canMoveTo(Position position) {
         return (position.larger(lewyDolny) && position.smaller(prawyGorny) && super.canMoveTo(position));
-    }
-
-    public void run(MoveDirection[] directions) throws InterruptedException, IOException {
-        super.run(directions);
-    }
-
-    public boolean isOccupied(Position position) {
-        return objectAt(position)!=null;
-    }
-
-    public Object objectAt(Position position) {
-        return super.objectAt(position);
-    }
-
-    public List<Car> getCars(){
-        return super.getCars();
-    }
-
-    @Override
-    public void positionChanged(Position oldPosition, Position newPosition) {
-        super.positionChanged(oldPosition, newPosition);
     }
 }

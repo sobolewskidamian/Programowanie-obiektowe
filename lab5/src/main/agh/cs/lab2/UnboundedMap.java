@@ -32,27 +32,12 @@ public class UnboundedMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean canMoveTo(Position position) {
-        return super.canMoveTo(position);
-    }
-
-    @Override
     public boolean place(Car car) {
         if(super.place(car)) {
             setCorners(car.getPosition());
             return true;
         }
         return false;
-    }
-
-    @Override
-    public void run(MoveDirection[] directions) throws InterruptedException, IOException {
-        super.run(directions);
-    }
-
-    @Override
-    public boolean isOccupied(Position position) {
-        return objectAt(position)!=null;
     }
 
     @Override

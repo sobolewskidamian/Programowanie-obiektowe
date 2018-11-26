@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-abstract class AbstractWorldMap {
+abstract class AbstractWorldMap implements IWorldMap {
     protected List<Car> cars = new LinkedList<>();
 
-    protected boolean place(Car car) {
+    public boolean place(Car car) {
         if (!isOccupied(car.getPosition())) {
             this.cars.add(car);
             return true;
@@ -15,11 +15,11 @@ abstract class AbstractWorldMap {
         return false;
     }
 
-    protected boolean isOccupied(Position position) {
+    public boolean isOccupied(Position position) {
         return objectAt(position)!=null;
     }
 
-    protected Object objectAt(Position position) {
+    public Object objectAt(Position position) {
         for (Car actualCar : cars) {
             if (actualCar.getPosition().equals(position))
                 return actualCar;
@@ -41,7 +41,7 @@ abstract class AbstractWorldMap {
         }
     }
 
-    protected boolean canMoveTo(Position afterMove){
+    public boolean canMoveTo(Position afterMove){
         return !isOccupied(afterMove);
     }
 
